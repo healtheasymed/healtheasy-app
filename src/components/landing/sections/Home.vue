@@ -7,9 +7,7 @@
         <h1>Sistema para clínicas e consultórios médicos</h1>
 
         <p>
-          Junte-se a médicos de todo o Brasil e transforme sua gestão com o
-          <b>Health Easy</b>. Da agenda online à gestão financeira, ganhe tempo
-          e lucratividade na rotina de sua clínica ou consultório médico.
+          Somos especializados em fornecer software de gestão para clínicas e consultórios médicos. Nossa solução de gestão de clínicas foi projetada para facilitar a vida dos médicos e suas equipes, melhorando a eficiência e a qualidade do atendimento ao paciente.
         </p>
 
         <CustomButton
