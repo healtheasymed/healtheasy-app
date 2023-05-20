@@ -1,0 +1,69 @@
+<template>
+  <section class="plans">
+    <a class="invisible-anchor" id="planos"></a>
+
+    <div class="content">
+      <header class="title">
+        <h2>Nossos <span>planos</span></h2>
+        <p>
+          Lorem ipsum is common placeholder text used to demonstrate the graphic
+          elements of a document or visual presentation.
+        </p>
+      </header>
+
+      <InteractivePricing />
+    </div>
+  </section>
+</template>
+
+<script>
+import { defineComponent } from 'vue';
+import InteractivePricing from '@/components/landing/elements/InteractivePricing';
+
+export default defineComponent({
+  name: 'PlansSection',
+
+  components: {
+    InteractivePricing,
+  },
+});
+</script>
+
+<style scoped>
+.plans {
+  background: linear-gradient(
+    180deg,
+    var(--light-green) 10%,
+    var(--white) 90%
+  );
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 2.6rem;
+}
+
+.title span {
+  color: var(--dark-blue);
+}
+
+.title p {
+  width: 60%;
+}
+
+@media (max-width: 375px) {
+  .content {
+    max-width: 320px;
+    padding: 0 !important;
+  }
+}
+</style>

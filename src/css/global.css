@@ -1,0 +1,121 @@
+:root {
+  --dark-blue: #0E7BA8;
+  --light-blue: #0E7BA823;
+  --dark-green: #3DCDD4;
+  --light-green: #3DCDD423;
+  --dark-purple: #AC5EB0;
+  --light-purple: #AC5EB023;
+
+  --primary-bg: #F3F3F3;
+  --primary-text: #18191F;
+
+  --black: #000000;
+  --blue: #223CBB;
+  --dark-gray: #777777;
+  --gray: #C5C5C5;
+  --light-gray: #E3E3E3;
+  --green: #54BD89;
+  --red: #E2183D;
+  --yellow: #F9971E;
+  --white: #FFFFFF;
+  --memed: #6161FF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 93.75%; /* 15px */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+:not(.q-table__middle.scroll)::-webkit-scrollbar-thumb:vertical,
+.scroll-x::-webkit-scrollbar-thumb:horizontal {
+  background: var(--dark-green);
+  border-radius: 8px;
+}
+
+.q-table__middle.scroll::-webkit-scrollbar-thumb:horizontal {
+  background: var(--dark-blue);
+  border-radius: 8px;
+}
+
+a {
+  color: var(--primary-text);
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.router-link-active,
+.router-link-exact-active,
+a:hover {
+  color: var(--dark-blue);
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  color: var(--white);
+  font-weight: bold;
+  padding: 15px 20px;
+}
+
+button:not(:disabled):hover,
+.button:not(:disabled):hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+button:disabled,
+.button:disabled {
+  background: var(--gray) !important;
+  cursor: not-allowed;
+}
+
+input:disabled {
+  color: var(--dark-gray) !important;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  padding-right: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.q-page-sticky {
+  z-index: 999;
+}
+
+.transparent {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#app {
+  background: var(--primary-bg);
+  min-height: 100vh;
+}
+
+/* @media (min-width: 860px) {
+  html {
+    font-size: 87.5%; /* 14px
+  }
+} */
