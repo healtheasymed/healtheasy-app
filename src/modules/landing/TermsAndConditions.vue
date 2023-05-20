@@ -24,8 +24,8 @@
           A <b>HEALTH EASY</b> é uma plataforma digital com recursos pagos e gratuitos,
           sendo que pertence e é operado pela <b><u>HEALTH EASY GESTAO EM SISTEMAS DE
           SAÚDE LTDA.</u></b>, inscrita no CNPJ sob o nº 45.808.183/0001-04, com sede
-          à Rua Ildefonso Albano, nº 262, bairro Meireles, apto 1302, Fortaleza/CE,
-          CEP 60115-000.
+          à Avenida Dom Luís, nº 176, bairro Aldeota, Fortaleza/CE,
+          CEP 60160-196.
         </p>
 
         <p class="q-mb-md">
