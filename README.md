@@ -25,7 +25,7 @@ Sistema de gerenciamento para profissionais atuantes na área da saúde.
 - [ ] Check if pay for plan before create an account results error
   - [X] On create account, search for same email on Profiles table, before insert the same data (check supabase trigger to update it)
 
-- [ ] Cannot access https://healtheasy.com.br/ without WWW
+- [X] Cannot access https://healtheasy.com.br/ without WWW
 
 ## Install the dependencies
 ```bash
@@ -53,6 +53,16 @@ npm run lint
 ```bash
 quasar build
 ```
+
+
+### Deploy the app to production (Github Pages)
+#### ⚠️⚠️ Cuidado! Este comando envia TODAS as modificações LOCAIS para produção, sem necessidade de commit ⚠️⚠️
+```bash
+yarn deploy
+# or
+npm run deploy
+```
+
 
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
