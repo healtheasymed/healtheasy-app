@@ -1,14 +1,13 @@
 <template>
   <section class="contact">
     <a class="invisible-anchor" id="contato"></a>
-
     <div class="content grid">
       <header class="title">
         <h2>Entre em <span>contato</span></h2>
         <p>
-         Para entrar em contato conosco, basta preencher o formulário na aba "Contato" ou meio do número (85) 4042-6250
+         Para entrar em contato conosco, basta preencher o formulário
+na aba "Contato" ou meio do número (85) 4042-6250
         </p>
-
         <div class="social-media">
           <SocialButton
             v-for="site in sites"
@@ -24,7 +23,6 @@
     </div>
   </section>
 </template>
-
 <script>
 import { defineComponent } from 'vue';
 import { sites } from '@/static/landing-page';
@@ -33,7 +31,6 @@ import ContactForm from '@/components/landing/groups/ContactForm';
 
 export default defineComponent({
   name: 'ContactSection',
-
   components: {
     SocialButton,
     ContactForm,
