@@ -6,14 +6,7 @@
       <header class="title">
         <h2>Nossos <span>planos</span></h2>
         <p>
-          Na Health Easy, temos planos flexíveis que são adaptados
-          às necessidades individuais de cada clínica ou consultório.
-          Oferecemos soluções personalizadas e eficazes para atender às suas demandas específicas.
-          Caso queira descobrir qual plano é o melhor para você ou sua empresa,
-          utilize nossa ferramenta de simulação
-          ou entre em contato conosco para saber mais sobre as nossas opções de planos.
-          Estamos prontos para ajudá-lo a encontrar a melhor solução
-          para a sua clínica ou consultório.
+          sem texto
         </p>
       </header>
 
