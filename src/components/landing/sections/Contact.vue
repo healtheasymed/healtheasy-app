@@ -6,7 +6,7 @@
         <h2>Entre em <span>contato</span></h2>
         <p>
          Para entrar em contato conosco, basta preencher o formulário
-na aba "Contato" ou meio do número (85) 40426250
+na aba "Contato" ou meio do número (85) 4042-6250
         </p>
         <div class="social-media">
           <SocialButton
