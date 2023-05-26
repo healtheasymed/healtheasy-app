@@ -1,1 +1,0 @@
-"use strict";(globalThis["webpackChunkhealtheasy_frontend"]=globalThis["webpackChunkhealtheasy_frontend"]||[]).push([[197],{8197:(e,a,h)=>{h.r(a),h.d(a,{default:()=>l});const s={},t=s,l=t}}]);
