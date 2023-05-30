@@ -19,10 +19,10 @@
       />
 
       <CustomInput
-        name="telephone"
-        type="telephone"
+        name="phone"
+        type="tel"
         placeholder="Telefone"
-        iconName="mdi-telephone"
+        iconName="mdi-phone"
         required
       />
 

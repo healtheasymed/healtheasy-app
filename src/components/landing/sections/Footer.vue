@@ -25,7 +25,6 @@
           Transformando a saúde em uma jornada fácil e acessível, a <b>Health Easy</b> oferece
           serviços de qualidade para cuidar do seu bem-estar.
         </p>
-        <p>ícones</p>
       </div>
 
       <div class="footer-contact">
@@ -46,7 +45,7 @@
     </div>
 
     <div class="content copyright">
-      <p>© 2023 - Health Easy. Todos os direitos reservados.</span></p>
+      <p>© 2023 - Health Easy. Todos os direitos reservados.</p>
 
       <ul>
         <li>
@@ -60,6 +59,27 @@
     </div>
   </footer>
 </template>
+
+export const sites = [
+  // {
+  //   id: 1,
+  //   name: 'Whatsapp',
+  //   icon: 'mdi-whatsapp',
+  //   link: 'https://www.facebook.com/'
+  // },
+  // {
+     id: 2,
+    name: 'LinkedIn',
+    icon: 'mdi-linkedin',
+    link: 'https://www.linkedin.com/mwlite/company/healtheasy',
+  },
+  {
+    id: 3,
+    name: 'Instagram',
+    icon: 'mdi-instagram',
+    link: 'https://www.instagram.com/healtheasyapp',
+  },
+];
 
 <script>
 import { defineComponent } from 'vue';
