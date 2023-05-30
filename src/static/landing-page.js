@@ -24,27 +24,27 @@ export const menu = [
 export const specialties = [
   {
     id: 1,
-    name: 'Clínicas Médicas',
-  },
-  {
-    id: 2,
-    name: 'Hospitais',
-  },
-  {
-    id: 3,
     name: 'Médicos',
   },
   {
-    id: 4,
+    id: 2,
+    name: 'Fisioterapeutas',
+  },
+  {
+    id: 3,
     name: 'Odontólogos',
   },
   {
+    id: 4,
+    name: 'Psicológos',
+  },
+  {
     id: 5,
-    name: 'Psicólogos',
+    name: 'Nutricionistas',
   },
   {
     id: 6,
-    name: 'Nutricionistas',
+    name: 'Hospitais',
   },
 ];
 

@@ -4,8 +4,11 @@
       <header class="title">
         <h2>Funcionalidades</h2>
         <p>
-          Lorem ipsum is common placeholder text used to demonstrate the graphic
-          elements of a document or visual presentation.
+          Na <b>Health Easy</b>, oferecemos diversos recursos e funções para ajudar
+          clínicas e consultórios a gerenciar seus processos com eficiência e facilidade.
+          Nossas soluções de software de gestão de clínicas e consultórios são projetadas para
+          ajudar a otimizar o atendimento ao paciente, melhorar o fluxo de trabalho e simplificar
+          tarefas administrativas.
         </p>
       </header>
 

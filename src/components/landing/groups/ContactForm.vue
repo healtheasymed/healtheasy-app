@@ -19,6 +19,14 @@
       />
 
       <CustomInput
+        name="telephone"
+        type="telephone"
+        placeholder="Telefone"
+        iconName="mdi-telephone"
+        required
+      />
+
+      <CustomInput
         name="subject"
         placeholder="Assunto"
         iconName="mdi-email"

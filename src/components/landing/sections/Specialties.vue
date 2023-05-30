@@ -2,8 +2,7 @@
   <section id="specialties">
     <div class="content">
       <header class="title">
-        <h2>O sistema ideal para sua</h2>
-        <p>especialidade médica:</p>
+        <h2>O sistema ideal para</h2>
       </header>
     </div>
 

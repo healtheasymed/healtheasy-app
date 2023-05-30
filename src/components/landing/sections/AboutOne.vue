@@ -5,37 +5,34 @@
     <div class="content grid">
       <div class="section-left">
         <header class="title">
-          <h2>Agenda médica na palma da mão</h2>
+          <h2>Impulsione sua eficiência com a Health Easy</h2>
 
           <p>
-            Com a agenda médica online do <b>Health Easy</b>, sua equipe
-            controla agendamentos, diminui faltas por meio do envio de SMS e
-            e-mail e ganha tempo para realizar o que realmente importa: o
-            atendimento ao paciente.
-          </p>
-          <p>
-            Com a agenda médica online do <b>Health Easy</b>, sua equipe
-            controla agendamentos.
+            Gerencie pacientes, históricos médicos e exames de forma eficiente.
+            Simplifique a administração financeira do seu consultório ou clínica.
+            Inovamos constantemente para fornecer as melhores ferramentas e tecnologias.
+            Junte-se à nossa comunidade confiável de profissionais de saúde.
+            Entre em contato hoje mesmo.
           </p>
         </header>
 
         <div class="left-chips">
           <CustomChip
-            title="+ de 10 milhões"
-            subtitle="de atendimentos."
+            title=""
+            subtitle=""
             bgColor="var(--light-purple)"
             titleColor="var(--dark-purple)"
-            :height="50"
-            :width="200"
+            :height="0"
+            :width="0"
           />
 
           <CustomChip
-            title="+ de 10 milhões"
-            subtitle="de atendimentos."
+            title=""
+            subtitle=""
             bgColor="var(--light-purple)"
             titleColor="var(--dark-purple)"
-            :height="50"
-            :width="200"
+            :height="0"
+            :width="0"
           />
         </div>
       </div>

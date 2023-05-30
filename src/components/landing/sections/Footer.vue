@@ -4,9 +4,8 @@
       <div class="footer-about">
         <img src="@/assets/logos/logo-white.png" alt="Health Easy - Logomarca" />
         <p>
-          Lorem ipsum dolor amet, consectetur adipiscing elit.
-          Eget nisl nunc quam ac sed turpis volutpat. Cursus sed
-          massa non nisi, placerat.
+          HEALTH EASY GESTAO EM SISTEMAS DE SAUDE LTDA
+          CNPJ 45.808.183/0001-04
         </p>
 
         <div class="social-media">
@@ -23,9 +22,8 @@
       <div class="footer-services">
         <h5>Serviços</h5>
         <p>
-          Lorem ipsum dolor amet, consectetur adipiscing elit.
-          Eget nisl nunc quam ac sed turpis volutpat. Cursus sed
-          massa non nisi, placerat.
+          Transformando a saúde em uma jornada fácil e acessível, a <b>Health Easy</b> oferece
+          serviços de qualidade para cuidar do seu bem-estar.
         </p>
         <p>ícones</p>
       </div>
@@ -38,17 +36,17 @@
         </p>
         <p>
           <q-icon name="mdi-phone" size="16px" class="q-mr-sm" />
-          hello@landify.co
+          (85) 4042-6250
         </p>
         <p>
           <q-icon name="mdi-map-marker" size="16px" class="q-mr-sm" />
-          hello@landify.co
+           Avenida Dom Luís, 176 - Mezanino - Fortaleza - Ceará
         </p>
       </div>
     </div>
 
     <div class="content copyright">
-      <p>© 2021 - <span>Health Easy</span></p>
+      <p>© 2023 - Health Easy. Todos os direitos reservados.</span></p>
 
       <ul>
         <li>

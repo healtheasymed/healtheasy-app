@@ -115,6 +115,29 @@
             />
           </template>
         </q-field>
+        <template v-if="form.role === 'doctor'">
+        <q-input
+        label="Número de CRM"
+        outlined
+        v-model="form.crmNumber"
+        :rules="[
+          val => (val && val.length > 0) || 'Por favor, informe o número de CRM.'
+        ]"
+      />
+        <q-select
+        label="Estado de Atuação"
+        outlined
+        v-model="form.crmState"
+        :options="estadoOptions"
+        :rules="[
+          val => (val && val.length > 0) || 'Por favor, informe o estado de atuação.'
+        ]"
+        emit-value
+        map-options
+        option-value="value"
+        option-label="label"
+      />
+        </template>
 
         <q-btn
           label="Registrar"
@@ -145,6 +168,35 @@ export default defineComponent({
   name: 'RegisterPage',
 
   setup() {
+    const estadoOptions = [
+      { label: 'Acre', value: 'AC' },
+      { label: 'Alagoas', value: 'AL' },
+      { label: 'Amapá', value: 'AP' },
+      { label: 'Amazonas', value: 'AM' },
+      { label: 'Bahia', value: 'BA' },
+      { label: 'Ceará', value: 'CE' },
+      { label: 'Distrito Federal', value: 'DF' },
+      { label: 'Espírito Santo', value: 'ES' },
+      { label: 'Goiás', value: 'GO' },
+      { label: 'Maranhão', value: 'MA' },
+      { label: 'Mato Grosso', value: 'MT' },
+      { label: 'Mato Grosso do Sul', value: 'MS' },
+      { label: 'Minas Gerais', value: 'MG' },
+      { label: 'Pará', value: 'PA' },
+      { label: 'Paraíba', value: 'PB' },
+      { label: 'Paraná', value: 'PR' },
+      { label: 'Pernambuco', value: 'PE' },
+      { label: 'Piauí', value: 'PI' },
+      { label: 'Rio de Janeiro', value: 'RJ' },
+      { label: 'Rio Grande do Norte', value: 'RN' },
+      { label: 'Rio Grande do Sul', value: 'RS' },
+      { label: 'Rondônia', value: 'RO' },
+      { label: 'Roraima', value: 'RR' },
+      { label: 'Santa Catarina', value: 'SC' },
+      { label: 'São Paulo', value: 'SP' },
+      { label: 'Sergipe', value: 'SE' },
+      { label: 'Tocantins', value: 'TO' },
+    ];
     const router = useRouter();
     const { register } = useAuthUser();
     const { notifySuccess, notifyError } = useNotify();
@@ -184,6 +236,7 @@ export default defineComponent({
     };
 
     return {
+      estadoOptions,
       form,
       disabledRadio,
       showPassword,
