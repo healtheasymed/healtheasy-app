@@ -5,8 +5,8 @@
       <header class="title">
         <h2>Entre em <span>contato</span></h2>
         <p>
-         Para entrar em contato conosco, basta preencher o <b>formulário</b>
-         na aba "Contato" ou por meio do número <b>(85) 4042-6250</b>.
+          Para entrar em contato conosco, basta preencher o <b>formulário</b>
+          na aba "Contato" ou por meio do número <a href="tel:+558540426250"><b>(85) 4042-6250</b></a>.
         </p>
         <div class="social-media">
           <SocialButton
