@@ -2,7 +2,7 @@
   <div class="feature-card" v-show="feature">
     <span class="mdi mdi-hammer-screwdriver" style="fontsize: 50px" />
     <h5>{{ feature.name }}</h5>
-    <p>{{ feature.description }}</p>
+    <p v-html="feature.description"></p>
   </div>
 </template>
 
@@ -29,7 +29,6 @@ export default defineComponent({
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 160px;
   justify-content: center;
   padding: 0 20px;
   width: 300px;
@@ -51,10 +50,10 @@ export default defineComponent({
   color: var(--dark-blue);
   font-size: 1.4rem;
   margin: 10px 0;
+  text-align: center;
 }
 
 .feature-card p {
-  color: var(--gray);
-  text-align: center;
+  color: var(--dark-gray);
 }
 </style>
