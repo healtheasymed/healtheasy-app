@@ -29,15 +29,17 @@
 
       <div class="footer-contact">
         <h5>Contato</h5>
-        <p>
+        <p class="text-left">
           <q-icon name="mdi-email" size="16px" class="q-mr-sm" />
-          contato@healtheasy.com.br
+          <a class="text-white" href="mailto:contato@healtheasy.com.br">
+            contato@healtheasy.com.br
+          </a>
         </p>
-        <p>
+        <p class="text-left">
           <q-icon name="mdi-phone" size="16px" class="q-mr-sm" />
           (85) 4042-6250
         </p>
-        <p>
+        <p class="text-left">
           <q-icon name="mdi-map-marker" size="16px" class="q-mr-sm" />
            Avenida Dom Luís, 176 - Mezanino - Fortaleza - Ceará
         </p>
