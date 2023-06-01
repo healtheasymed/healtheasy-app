@@ -16,23 +16,23 @@
           </p>
         </header>
 
-        <div class="left-chips">
-          <CustomChip
-            title=""
-            subtitle=""
+        <div class="left-chips hidden">
+           <CustomChip
+            title="+ de 10 milhões"
+            subtitle="de atendimentos."
             bgColor="var(--light-purple)"
             titleColor="var(--dark-purple)"
-            :height="0"
-            :width="0"
+            :height="50"
+            :width="200"
           />
 
           <CustomChip
-            title=""
-            subtitle=""
+            title="+ de 10 milhões"
+            subtitle="de atendimentos."
             bgColor="var(--light-purple)"
             titleColor="var(--dark-purple)"
-            :height="0"
-            :width="0"
+            :height="50"
+            :width="200"
           />
         </div>
       </div>
