@@ -61,7 +61,7 @@ module.exports = configure((ctx) => ({
       STRIPE_PLAN_1: 'price_1MHZrIJKeXqQJBcnI0GlDCsU',
       STRIPE_PLAN_2: 'price_1MHZstJKeXqQJBcnbwqLqJXx',
       STRIPE_PLAN_3: 'price_1MHZuXJKeXqQJBcnRsGJuhBv',
-      EMAILJS_SERVICE_ID: 'service_biyr9o9',
+      EMAILJS_SERVICE_ID: 'service_2mqua0k',
       EMAILJS_TEMPLATE: 'template_e3te8fa',
       EMAILJS_USER_ID: 'hax-Z2Q7qPDYzd75t',
       MEMED_API_KEY: 'iJGiB4kjDGOLeDFPWMG3no9VnN7Abpqe3w1jEFm6olkhkZD6oSfSmYCm',
