@@ -120,7 +120,7 @@
           <q-input
             label="Número do CRM"
             outlined
-            v-model="form.crmNumber"
+            v-model="form.crm"
             :rules="[
               val => (val && val.length > 0) || 'Por favor, informe o Número do CRM.'
             ]"
@@ -184,8 +184,8 @@ export default defineComponent({
       email: '',
       password: '',
       role: 'doctor',
-      crmNumber: '',
-      crmState: '',
+      crm: '',
+      state: '',
     });
 
     const disabledRadio = ref('');
@@ -195,6 +195,10 @@ export default defineComponent({
 
     const onSubmit = async () => {
       try {
+        /* TODO:
+          alterar o trigger do supabase para pegar o id criado e o papel do usuario
+          e inserir as informaçoes do crm na tabela de médico (caso seja médico)
+        */
         await register(form.value);
         notifySuccess();
         router.push({
