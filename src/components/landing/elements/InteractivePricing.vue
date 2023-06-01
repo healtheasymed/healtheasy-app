@@ -23,7 +23,7 @@
     </header>
 
     <footer class="description-plan">
-      <h6>What's included</h6>
+      <h6>o que está incluso</h6>
       <ul>
         <li class="plan-item" v-for="service in plans.services" :key="service.id">
           <p>
