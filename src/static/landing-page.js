@@ -51,37 +51,65 @@ export const specialties = [
 export const features = [
   {
     id: 1,
-    name: 'Funcionalidade 1',
+    name: 'Tela de Atendimento',
     description:
-      'Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.',
+      '- Acompanhamento de consultas e pacientes; </br> - Informações de agendamento, status de consulta e histórico de atendimentos; </br> - Possibilidade de reagendamento ou cancelamento de consultas',
     icon: 'Funcionalidade 1',
   },
   {
     id: 2,
-    name: 'Funcionalidade 2',
+    name: 'Agenda Eletrônica',
     description:
-      'Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.',
+      '- Gerenciamento de horários com facilidade; </br> - Planejamento e organização do dia para garantir produtividades; </br> - Visualização rápida de horários disponíveis e ocupados',
     icon: 'Funcionalidade 1',
   },
   {
     id: 3,
-    name: 'Funcionalidade 3',
+    name: 'Prontuário Digital',
     description:
-      'Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.',
+      '- Simplificação do gerenciamento de informações do paciente; </br> - Acesso fácil a anamneses e histórico de atendimentos; </br> - Possibilidade de adicionar e editar informações sobre o paciente',
     icon: 'Funcionalidade 1',
   },
   {
     id: 4,
-    name: 'Funcionalidade 4',
+    name: 'Prescrição e Solicitação de Exames',
     description:
-      'Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.',
+      '- Possibilidade de gerenciar a prescrição de medicamentos e solicitação de exames; </br> - Integração com a plataforma MEMED para agilizar e simplificar esses processos; </br> - Rastreamento fácil de prescrições e solicitações pendentes',
     icon: 'Funcionalidade 1',
   },
   {
     id: 5,
-    name: 'Funcionalidade 5',
+    name: 'Resultado de Exames',
     description:
-      'Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.',
+      '- Gerenciamento e publicação de resultados de exames de maneira rápida e eficiente; </br> - Acesso fácil e rápido a resultados de exames do paciente; </br> - Possibilidade de imprimir e compartilhar resultados de exames com o paciente',
+    icon: 'Funcionalidade 1',
+  },
+  {
+    id: 6,
+    name: 'Gestão Financeira',
+    description:
+      '- Gerenciamento de pagamentos de planos, particulares e impostos; </br> - Visualização clara do fluxo de caixa; </br> - Controle de custos gerais e gastos da clínica ou consultório médicos',
+    icon: 'Funcionalidade 1',
+  },
+  {
+    id: 7,
+    name: 'Tela de Farmácia',
+    description:
+      '- Controle de medicamentos; </br> - Possibilidade de gerenciamento de estoque de medicamentos; </br> - Acesso fácil e rápido a informações sobre medicamentos em uso pelos pacientes',
+    icon: 'Funcionalidade 1',
+  },
+  {
+    id: 8,
+    name: 'Prevenção Primária',
+    description:
+      '- Acompanhamento de doenças crônicas; </br> - Gerenciamento de informações de saúde dos pacientes; </br> - Possibilidade de rastreamento e monitoramento de doenças crônicas',
+    icon: 'Funcionalidade 1',
+  },
+  {
+    id: 9,
+    name: 'Laboratório',
+    description:
+      '- Marcação de exames; </br> - Publicação de resultados de exames; </br> - Acesso rápido e fácil a informações sobre exames e resultados',
     icon: 'Funcionalidade 1',
   },
 ];
