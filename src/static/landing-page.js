@@ -139,35 +139,60 @@ export const plans = {
   ],
   services: [
     {
+      id: 0,
+      name: 'Tela de Atendimento',
+      icon: 'mdi-check',
+    },
+    {
       id: 1,
-      name: 'Suporte 24h',
+      name: 'Agenda Eletrônica',
       icon: 'mdi-check',
     },
     {
       id: 2,
-      name: 'Suporte 24h',
+      name: 'Prontuário Digital',
       icon: 'mdi-check',
     },
     {
       id: 3,
-      name: 'Suporte 24h',
+      name: 'Prescrição e Solicitação de Exames',
       icon: 'mdi-check',
     },
     {
       id: 4,
-      name: 'Suporte 24h',
-      icon: 'mdi-cancel',
+      name: 'Resultado de Exames',
+      icon: 'mdi-check',
     },
     {
       id: 5,
-      name: 'Suporte 24h',
-      icon: 'mdi-cancel',
+      name: 'Gestão Financeira',
+      icon: 'mdi-check',
     },
     {
       id: 6,
-      name: 'Suporte 24h',
-      icon: 'mdi-cancel',
+      name: 'Tela de Farmácia',
+      icon: 'mdi-check',
     },
+    {
+      id: 7,
+      name: 'Prevenção Primária',
+      icon: 'mdi-check',
+    },
+    {
+      id: 8,
+      name: 'Laboratório',
+      icon: 'mdi-check',
+    },
+    {
+      id: 9,
+      name: 'Suporte 24h',
+      icon: 'mdi-check',
+    },
+    // {
+    //   id: 6,
+    //   name: 'Suporte 24h',
+    //   icon: 'mdi-cancel',
+    // },
   ],
 };
 
