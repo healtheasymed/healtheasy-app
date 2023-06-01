@@ -25,12 +25,15 @@ export default defineComponent({
 <style scoped>
 .feature-card {
   background: var(--white);
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: center;
-  padding: 0 20px;
+  padding: 20px;
   width: 300px;
 }
 
