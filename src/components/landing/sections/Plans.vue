@@ -5,7 +5,7 @@
     <div class="content">
       <header class="title">
         <h2>Nossos <span>planos</span></h2>
-        <p class="text-center">
+        <p class="text-left">
           Na Health Easy, temos planos flexíveis que são adaptados
           às necessidades individuais de cada clínica ou consultório.
           Oferecemos soluções personalizadas e eficazes para atender às suas demandas específicas.
@@ -60,7 +60,6 @@ export default defineComponent({
 .title p {
   width: 60%;
   margin: 0 auto;
-  text-align: center;
 }
 
 @media (max-width: 375px) {

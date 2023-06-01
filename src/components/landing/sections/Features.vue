@@ -3,7 +3,7 @@
     <div class="content">
       <header class="title">
         <h2>Funcionalidades</h2>
-        <p>
+        <p class="text-left">
           Na <b>Health Easy</b>, oferecemos diversos recursos e funções para ajudar
           clínicas e consultórios a gerenciar seus processos com eficiência e facilidade.
           Nossas soluções de software de gestão de clínicas e consultórios são projetadas para
