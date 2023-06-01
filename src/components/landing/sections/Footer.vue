@@ -62,27 +62,6 @@
   </footer>
 </template>
 
-export const sites = [
-  // {
-  //   id: 1,
-  //   name: 'Whatsapp',
-  //   icon: 'mdi-whatsapp',
-  //   link: 'https://www.facebook.com/'
-  // },
-  // {
-     id: 2,
-    name: 'LinkedIn',
-    icon: 'mdi-linkedin',
-    link: 'https://www.linkedin.com/mwlite/company/healtheasy',
-  },
-  {
-    id: 3,
-    name: 'Instagram',
-    icon: 'mdi-instagram',
-    link: 'https://www.instagram.com/healtheasyapp',
-  },
-];
-
 <script>
 import { defineComponent } from 'vue';
 import { sites } from '@/static/landing-page';
@@ -106,12 +85,12 @@ export default defineComponent({
 <style scoped>
 footer {
   background: var(--black);
-  min-height: 45vh;
+  min-height: 35vh;
 }
 
 .content {
   color: var(--white);
-  align-items: center;
+  align-items: start;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -136,10 +115,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.footer-contact {
-  text-align: center;
 }
 
 .copyright {
