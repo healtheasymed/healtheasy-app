@@ -100,7 +100,7 @@ export const features = [
   },
   {
     id: 8,
-    name: 'Prevenção Primária',
+    name: 'Prevenção de doenças e complicações',
     description:
       '- Acompanhamento de doenças crônicas; </br> - Gerenciamento de informações de saúde dos pacientes; </br> - Possibilidade de rastreamento e monitoramento de doenças crônicas',
     icon: 'Funcionalidade 1',
