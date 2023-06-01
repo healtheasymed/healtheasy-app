@@ -73,6 +73,7 @@ export default defineComponent({
     const sendEmail = () => {
       if (!formRef.value.name.value
         || !formRef.value.email.value
+        || !formRef.value.phone.value
         || !formRef.value.subject.value
         || !formRef.value.message.value) {
         $q.notify({
@@ -88,12 +89,14 @@ export default defineComponent({
         formRef.value,
         process.env.EMAILJS_USER_ID,
       )
-        .then(() => (
+        .then(() => {
           $q.notify({
             type: 'positive',
             message: 'Mensagem enviada com sucesso.',
-          })
-        ), (error) => (
+          });
+
+          formRef.value.reset();
+        }, (error) => (
           $q.notify({
             type: 'negative',
             message: error.text,
