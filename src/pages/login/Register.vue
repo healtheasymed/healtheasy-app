@@ -115,28 +115,30 @@
             />
           </template>
         </q-field>
+
         <template v-if="form.role === 'doctor'">
-        <q-input
-        label="Número de CRM"
-        outlined
-        v-model="form.crmNumber"
-        :rules="[
-          val => (val && val.length > 0) || 'Por favor, informe o número de CRM.'
-        ]"
-      />
-        <q-select
-        label="Estado de Atuação"
-        outlined
-        v-model="form.crmState"
-        :options="states"
-        :rules="[
-          val => (val && val.length > 0) || 'Por favor, informe o estado de atuação.'
-        ]"
-        emit-value
-        map-options
-        option-value="value"
-        option-label="label"
-      />
+          <q-input
+            label="Número do CRM"
+            outlined
+            v-model="form.crmNumber"
+            :rules="[
+              val => (val && val.length > 0) || 'Por favor, informe o Número do CRM.'
+            ]"
+          />
+          <q-select
+            v-model="form.state"
+            label="Estado de Atuação"
+            outlined
+            :options="states"
+            option-label="nome"
+            option-value="nome"
+            emit-value
+            map-options
+            lazy-rules
+            :rules="[
+              val => (val && val.length > 0) || 'Por favor, informe o Estado de Atuação.'
+            ]"
+          />
         </template>
 
         <q-btn
@@ -161,6 +163,7 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { storeToRefs } from 'pinia';
 import useAuthUser from '@/composables/useAuthUser';
 import useNotify from '@/composables/useNotify';
 import { useBrazilianStatesStore } from '@/stores/brazilianStates';
@@ -181,6 +184,8 @@ export default defineComponent({
       email: '',
       password: '',
       role: 'doctor',
+      crmNumber: '',
+      crmState: '',
     });
 
     const disabledRadio = ref('');
