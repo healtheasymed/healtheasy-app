@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 import { mountObjFormWithTableColumnsWithCustomValue } from '@/utils/formUtils';
 
-export const anamnesisEnum = {
+export const anamnesisModel = {
   table: 'anamnesis',
   columns: [
     {
@@ -23,6 +23,6 @@ export const anamnesisEnum = {
   ],
 };
 
-export function getAnamnesisEnumForm() {
-  return ref(mountObjFormWithTableColumnsWithCustomValue(anamnesisEnum.columns));
+export function getAnamnesisModelForm() {
+  return ref(mountObjFormWithTableColumnsWithCustomValue(anamnesisModel.columns));
 }

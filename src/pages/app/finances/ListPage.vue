@@ -6,7 +6,7 @@
       labelTitle="Finanças"
       routeName="form-finance"
       :rowsData="finances"
-      :colsData="financeEnum.quasarColumns"
+      :colsData="financeModel.quasarColumns"
       :isLoading="isLoading"
       :customSlots="['value', 'date']"
       @edit="(id) => onEdit(id)"
@@ -37,7 +37,7 @@ import { defineComponent, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { storeToRefs } from 'pinia';
 import { useFinancesStore } from '@/stores/finances';
-import { financeEnum } from '@/enums/financeEnum';
+import { financeModel } from '@/models/financeModel';
 import { getLocaleDateFormatted } from '@/utils/dateUtils';
 import Finances from '@/components/dashboard/finances/Finances.vue';
 import DynamicTable from '@/components/DynamicTable.vue';
@@ -63,7 +63,7 @@ export default defineComponent({
     });
 
     return {
-      financeEnum,
+      financeModel,
       isLoading,
       finances,
       onEdit,

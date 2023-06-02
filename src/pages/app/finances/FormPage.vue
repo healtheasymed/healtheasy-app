@@ -127,7 +127,7 @@ import InputDate from '@/components/InputDate';
 import useSupabaseApi from '@/composables/useSupabaseApi';
 import useDialog from '@/composables/useDialog';
 import useNotify from '@/composables/useNotify';
-import { getFinanceEnumForm } from '@/enums/financeEnum';
+import { getFinanceModelForm } from '@/models/financeModel';
 import { hasFormChanged } from '@/utils/formUtils';
 import {
   getTodayLocaleDate,
@@ -152,7 +152,7 @@ export default defineComponent({
     const showError = ref(false);
     const formHasChanged = ref(false);
     const isDisabled = ref(false);
-    const form = getFinanceEnumForm();
+    const form = getFinanceModelForm();
     const initialForm = structuredClone(form);
 
     const date = ref(getTodayLocaleDate());
@@ -249,7 +249,7 @@ export default defineComponent({
     });
 
     onUnmounted(() => {
-      form.value = getFinanceEnumForm();
+      form.value = getFinanceModelForm();
       initialForm.value = structuredClone(form);
     });
 

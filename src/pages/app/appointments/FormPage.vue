@@ -165,7 +165,7 @@ import InputDateTime from '@/components/InputDateTime';
 import useSupabaseApi from '@/composables/useSupabaseApi';
 import useDialog from '@/composables/useDialog';
 import useNotify from '@/composables/useNotify';
-import { appointmentEnum, getAppointmentEnumForm } from '@/enums/appointmentEnum';
+import { appointmentModel, getAppointmentModelForm } from '@/models/appointmentModel';
 import { hasFormChanged } from '@/utils/formUtils';
 import {
   getTodayLocaleDateTime,
@@ -193,10 +193,10 @@ export default defineComponent({
     const showError = ref(false);
     const formHasChanged = ref(false);
     const isDisabled = ref(false);
-    const form = getAppointmentEnumForm();
+    const form = getAppointmentModelForm();
     const initialForm = structuredClone(form);
 
-    const colorOptions = appointmentEnum.eventColors;
+    const colorOptions = appointmentModel.eventColors;
 
     const isAllDay = ref(false);
 
@@ -333,7 +333,7 @@ export default defineComponent({
     });
 
     onUnmounted(() => {
-      form.value = getAppointmentEnumForm();
+      form.value = getAppointmentModelForm();
       initialForm.value = structuredClone(form);
     });
 

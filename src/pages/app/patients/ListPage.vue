@@ -4,7 +4,7 @@
       labelTitle="Pacientes"
       routeName="form-patient"
       :rowsData="patients"
-      :colsData="patientEnum.quasarColumns"
+      :colsData="patientModel.quasarColumns"
       :isLoading="isLoading"
       :customSlots="['name', 'plans', 'contacts', 'actions']"
     >
@@ -106,7 +106,7 @@ import { useRouter } from 'vue-router';
 import { openURL } from 'quasar';
 import { storeToRefs } from 'pinia';
 import { usePatientsStore } from '@/stores/patients';
-import { patientEnum } from '@/enums/patientEnum';
+import { patientModel } from '@/models/patientModel';
 import DynamicTable from '@/components/DynamicTable.vue';
 
 export default defineComponent({
@@ -147,7 +147,7 @@ export default defineComponent({
     });
 
     return {
-      patientEnum,
+      patientModel,
       isLoading,
       patients,
       onEdit,

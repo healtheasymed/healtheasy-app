@@ -1,9 +1,9 @@
 import { ref } from 'vue';
 import { mountObjFormWithTableColumns } from '@/utils/formUtils';
 
-export const treatmentEnum = {
-  table: 'treatments',
-  columns: ['id', 'doctor_id', 'patient_id', 'plan', 'date', 'anamnesis_id'],
+export const financeModel = {
+  table: 'finances',
+  columns: ['id', 'name', 'type', 'value', 'date', 'note'],
   quasarColumns: [
     {
       name: 'id',
@@ -14,28 +14,21 @@ export const treatmentEnum = {
     },
     {
       name: 'name',
-      label: 'Paciente',
+      label: 'Descrição',
       field: 'name',
       align: 'center',
       sortable: true,
     },
     {
-      name: 'doctor_name',
-      label: 'Médico(a)',
-      field: 'doctor_name',
-      align: 'center',
-      sortable: true,
-    },
-    {
-      name: 'plan',
-      label: 'Plano',
-      field: 'plan',
+      name: 'value',
+      label: 'Valor',
+      field: 'value',
       align: 'center',
       sortable: true,
     },
     {
       name: 'date',
-      label: 'Data',
+      label: 'Data de Lançamento',
       field: 'date',
       align: 'center',
       sortable: true,
@@ -50,6 +43,6 @@ export const treatmentEnum = {
   ],
 };
 
-export function getTreatmentEnumForm() {
-  return ref(mountObjFormWithTableColumns(treatmentEnum.columns));
+export function getFinanceModelForm() {
+  return ref(mountObjFormWithTableColumns(financeModel.columns));
 }

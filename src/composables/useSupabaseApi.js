@@ -1,5 +1,5 @@
 import useSupabase from '@/boot/supabase';
-import { profileEnum } from '@/enums/profileEnum';
+import { profileModel } from '@/models/profileModel';
 import { populateTableColumnsForm } from '@/utils/tableUtils';
 import useAuthUser from './useAuthUser';
 
@@ -224,9 +224,9 @@ export default function useAPI() {
 
     let [profile] = data;
 
-    if (userAuthRole && profileEnum[userAuthRole]?.table) {
+    if (userAuthRole && profileModel[userAuthRole]?.table) {
       const { id, ...roleData } = await getByProfileId(
-        profileEnum[userAuthRole]?.table,
+        profileModel[userAuthRole]?.table,
         profile.id,
       );
 
@@ -249,20 +249,20 @@ export default function useAPI() {
     // TODO: atualizar o phone com o formato => +5532999999999.
     await supabase.auth.update({ data: { name: form.name } });
 
-    const profileColumns = populateTableColumnsForm(profileEnum.profileColumns, form);
+    const profileColumns = populateTableColumnsForm(profileModel.profileColumns, form);
     let profileData = await update('profiles', profileColumns);
 
     let roleColumns = null;
 
     if (userAuthRole) {
-      roleColumns = populateTableColumnsForm(profileEnum[userAuthRole].columns, form);
+      roleColumns = populateTableColumnsForm(profileModel[userAuthRole].columns, form);
     }
 
     if (roleColumns) {
-      let roleDataByGet = await getByUserId(profileEnum[userAuthRole].table);
+      let roleDataByGet = await getByUserId(profileModel[userAuthRole].table);
 
       if (!roleDataByGet) {
-        roleDataByGet = await getByProfileId(profileEnum[userAuthRole].table, profileData.id);
+        roleDataByGet = await getByProfileId(profileModel[userAuthRole].table, profileData.id);
       }
 
       roleColumns = { id: roleDataByGet?.id, user_id: userAuth.value.id, ...roleColumns };
@@ -270,7 +270,7 @@ export default function useAPI() {
       const {
         id,
         ...roleDataByUpsert
-      } = await upsert(profileEnum[userAuthRole].table, roleColumns) || {};
+      } = await upsert(profileModel[userAuthRole].table, roleColumns) || {};
 
       Object.assign(profileData, roleDataByUpsert);
       profileData = {

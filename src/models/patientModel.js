@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 import { mountObjFormWithTableColumns } from '@/utils/formUtils';
 
-export const patientEnum = {
+export const patientModel = {
   table: 'patients',
   columns: ['id', 'name', 'social_name', 'sex', 'birth_date', 'address', 'cpf', 'phone', 'email', 'plan', 'plan_number', 'previous_illnesses', 'usual_medications', 'allergies'],
   quasarColumns: [
@@ -43,6 +43,6 @@ export const patientEnum = {
   ],
 };
 
-export function getPatientEnumForm() {
-  return ref(mountObjFormWithTableColumns(patientEnum.columns));
+export function getPatientModelForm() {
+  return ref(mountObjFormWithTableColumns(patientModel.columns));
 }

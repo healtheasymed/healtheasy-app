@@ -4,7 +4,7 @@
       labelTitle="Médicos"
       routeName="form-doctor"
       :rowsData="doctors"
-      :colsData="doctorEnum.quasarColumns"
+      :colsData="doctorModel.quasarColumns"
       :isLoading="isLoading"
       :customSlots="['name', 'plans', 'contacts', 'actions']"
     >
@@ -106,7 +106,7 @@ import { useRouter } from 'vue-router';
 import { openURL } from 'quasar';
 import { storeToRefs } from 'pinia';
 import { useDoctorsStore } from '@/stores/doctors';
-import { doctorEnum } from '@/enums/doctorEnum';
+import { doctorModel } from '@/models/doctorModel';
 import DynamicTable from '@/components/DynamicTable.vue';
 
 export default defineComponent({
@@ -149,7 +149,7 @@ export default defineComponent({
     });
 
     return {
-      doctorEnum,
+      doctorModel,
       isLoading,
       doctors,
       onShow,

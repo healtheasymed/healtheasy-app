@@ -153,7 +153,7 @@ import { useUserStore } from '@/stores/user';
 import { useBrazilianStatesStore } from '@/stores/brazilianStates';
 import useDialog from '@/composables/useDialog';
 import useNotify from '@/composables/useNotify';
-import { profileEnumForm } from '@/enums/profileEnum';
+import { profileModelForm } from '@/models/profileModel';
 import { specialties as specialtiesOptions } from '@/static/specialties';
 import { hasFormChanged } from '@/utils/formUtils';
 import InputImage from '@/components/InputImage.vue';
@@ -181,8 +181,8 @@ export default defineComponent({
     const formHasChanged = ref(false);
     const isDisabled = ref(false);
 
-    const initialForm = structuredClone(profileEnumForm);
-    const form = profileEnumForm;
+    const initialForm = structuredClone(profileModelForm);
+    const form = profileModelForm;
     const inputImageRef = ref(null);
 
     watch(form, () => {

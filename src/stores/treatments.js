@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 
-import { getTreatmentEnumForm } from '@/enums/treatmentEnum';
-import { getAnamnesisEnumForm } from '@/enums/anamnesisEnum';
+import { getTreatmentModelForm } from '@/models/treatmentModel';
+import { getAnamnesisModelForm } from '@/models/anamnesisModel';
 
 import {
   getTodayLocaleDateTime,
@@ -31,10 +31,10 @@ export const useTreatmentsStore = defineStore({
     identificationFormHasChanged: false,
     anamnesisFormHasChanged: false,
     isDisabled: false,
-    treatmentForm: getTreatmentEnumForm(),
-    anamnesisForm: getAnamnesisEnumForm(),
-    initialTreatmentForm: getTreatmentEnumForm(),
-    initialAnamnesisForm: getAnamnesisEnumForm(),
+    treatmentForm: getTreatmentModelForm(),
+    anamnesisForm: getAnamnesisModelForm(),
+    initialTreatmentForm: getTreatmentModelForm(),
+    initialAnamnesisForm: getAnamnesisModelForm(),
     treatmentDate: getTodayLocaleDateTime(),
     patientsList: null,
     selectedPatient: null,

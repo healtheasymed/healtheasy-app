@@ -5,7 +5,7 @@
       labelTitle="Atendimentos"
       routeName="form-treatment"
       :rowsData="treatments"
-      :colsData="treatmentEnum.quasarColumns"
+      :colsData="treatmentModel.quasarColumns"
       :isLoading="isLoading"
       @edit="(id) => onEdit(id)"
       @delete="({ key, rowName }) => onDelete(key, rowName)"
@@ -28,7 +28,7 @@
 import { defineComponent, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { storeToRefs } from 'pinia';
-import { treatmentEnum } from '@/enums/treatmentEnum';
+import { treatmentModel } from '@/models/treatmentModel';
 import { useTreatmentsStore } from '@/stores/treatments';
 import DynamicTable from '@/components/DynamicTable';
 
@@ -56,7 +56,7 @@ export default defineComponent({
     });
 
     return {
-      treatmentEnum,
+      treatmentModel,
       isLoading,
       treatments,
       onEdit,

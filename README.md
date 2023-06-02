@@ -16,7 +16,7 @@ Sistema de gerenciamento para profissionais atuantes na área da saúde.
   - [X] Persiste view mode on change page
   - [ ] Persiste period on change page
   - [X] Change date format in date picker
-- [ ] Change 'Enums' to 'Models'
+- [X] Change 'Enums' to 'Models'
 - [ ] Change functions names in dateUtils
 - [ ] Refactors:
   - [ ] QEditor Component
@@ -63,6 +63,10 @@ yarn deploy
 npm run deploy
 ```
 
+
+### ⚠️⚠️ NOTAS IMPORTANTES ⚠️⚠️
+- Arquivos da pasta "anamnesis" são apenas templates para facilitar a edição. 
+Para que as modificações apareçam no App, os arquivos deverão ser alterados também no Supabase.
 
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).

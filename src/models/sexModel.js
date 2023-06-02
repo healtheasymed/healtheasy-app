@@ -1,4 +1,4 @@
-// export const genderEnum = [
+// export const genderModel = [
 //   0: 'Mulher Cisgênero',
 //   1: 'Mulher Transgênero',
 //   2: 'Homem Cisgênero',
@@ -11,4 +11,4 @@
 //   9: 'Outro',
 // ];
 
-export const sexEnum = ['Feminino', 'Masculino', 'Intersexo', 'Transexual', 'Outro'];
+export const sexModel = ['Feminino', 'Masculino', 'Intersexo', 'Transexual', 'Outro'];

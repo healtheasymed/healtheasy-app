@@ -305,8 +305,8 @@ import { storeToRefs } from 'pinia';
 import useSupabaseApi from '@/composables/useSupabaseApi';
 import useDialog from '@/composables/useDialog';
 import useNotify from '@/composables/useNotify';
-import { getProfileEnumForm, getDoctorEnumForm } from '@/enums/doctorEnum';
-import { sexEnum } from '@/enums/sexEnum';
+import { getProfileModelForm, getDoctorModelForm } from '@/models/doctorModel';
+import { sexModel } from '@/models/sexModel';
 import { hasFormChanged } from '@/utils/formUtils';
 import {
   getTodayLocaleDate,
@@ -348,11 +348,11 @@ export default defineComponent({
     const formHasChanged = ref(false);
     const isDisabled = ref(false);
 
-    const form = getDoctorEnumForm();
+    const form = getDoctorModelForm();
     const initialForm = structuredClone(form);
-    const profileForm = getProfileEnumForm();
+    const profileForm = getProfileModelForm();
     const initialProfileForm = structuredClone(profileForm);
-    const sexOptions = sexEnum;
+    const sexOptions = sexModel;
     const birthDate = ref(getTodayLocaleDate());
     const healthPlansSelectRef = ref(null);
     const plans = ref(null);
@@ -600,9 +600,9 @@ export default defineComponent({
     });
 
     onUnmounted(() => {
-      form.value = getDoctorEnumForm();
+      form.value = getDoctorModelForm();
       initialForm.value = structuredClone(form);
-      profileForm.value = getProfileEnumForm();
+      profileForm.value = getProfileModelForm();
       initialProfileForm.value = structuredClone(profileForm);
     });
 

@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 import { mountObjFormWithTableColumns } from '@/utils/formUtils';
 
-export const appointmentEnum = {
+export const appointmentModel = {
   table: 'appointments',
   columns: ['id', 'name', 'color', 'date_starts', 'date_ends', 'note', 'type'],
   eventColors: [
@@ -24,6 +24,6 @@ export const appointmentEnum = {
   ],
 };
 
-export function getAppointmentEnumForm() {
-  return ref(mountObjFormWithTableColumns(appointmentEnum.columns));
+export function getAppointmentModelForm() {
+  return ref(mountObjFormWithTableColumns(appointmentModel.columns));
 }

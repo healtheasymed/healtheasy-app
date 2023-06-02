@@ -74,7 +74,7 @@ import { storeToRefs } from 'pinia';
 import { useSubscriptionStore } from '@/stores/subscription';
 import { formatStripeCurrency } from '@/utils/currencyUtils';
 import { getLocaleDate } from '@/utils/dateUtils';
-import { invoiceEnum } from '@/enums/invoiceEnum';
+import { invoiceModel } from '@/models/invoiceModel';
 import DynamicTable from '@/components/DynamicTable';
 
 export default defineComponent({
@@ -90,8 +90,8 @@ export default defineComponent({
     } = storeToRefs(store);
 
     const paidColumns = computed(() => {
-      const cols = structuredClone(invoiceEnum.quasarColumns);
-      cols.splice(-2, 0, ...invoiceEnum.quasarPaidColumns);
+      const cols = structuredClone(invoiceModel.quasarColumns);
+      cols.splice(-2, 0, ...invoiceModel.quasarPaidColumns);
       return cols;
     });
 

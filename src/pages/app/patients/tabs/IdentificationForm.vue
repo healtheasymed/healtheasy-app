@@ -348,8 +348,8 @@ import { useQuasar } from 'quasar';
 import useSupabaseApi from '@/composables/useSupabaseApi';
 import useDialog from '@/composables/useDialog';
 import useNotify from '@/composables/useNotify';
-import { getPatientEnumForm } from '@/enums/patientEnum';
-import { sexEnum } from '@/enums/sexEnum';
+import { getPatientModelForm } from '@/models/patientModel';
+import { sexModel } from '@/models/sexModel';
 import { hasFormChanged } from '@/utils/formUtils';
 import {
   getTodayLocaleDate,
@@ -378,9 +378,9 @@ export default defineComponent({
     const formHasChanged = ref(false);
     const isDisabled = ref(false);
 
-    const form = getPatientEnumForm();
+    const form = getPatientModelForm();
     const initialForm = structuredClone(form);
-    const sexOptions = sexEnum;
+    const sexOptions = sexModel;
     const hasSocialName = ref(false);
     const birthDate = ref(getTodayLocaleDate());
 
@@ -525,7 +525,7 @@ export default defineComponent({
     });
 
     onUnmounted(() => {
-      form.value = getPatientEnumForm();
+      form.value = getPatientModelForm();
       initialForm.value = structuredClone(form);
     });
 

@@ -1,4 +1,4 @@
-export const invoiceEnum = {
+export const invoiceModel = {
   table: 'subscriptions',
   columns: ['id', 'stripe_customer', 'status', 'product', 'quantity', 'total', 'stripe_subscription', 'stripe_invoice', 'date_start', 'date_end'],
   columnsOpenned: ['invoice_url', 'due_date'],

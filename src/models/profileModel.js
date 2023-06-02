@@ -4,7 +4,7 @@ import { mountObjFormWithTableColumns } from '@/utils/formUtils';
 
 const { userAuthRole } = useAuthUser();
 
-export const profileEnum = {
+export const profileModel = {
   profileColumns: ['id', 'name', 'email', 'avatar_url', 'phone', 'stripe_customer', 'status'],
   doctor: {
     table: 'doctors',
@@ -12,8 +12,8 @@ export const profileEnum = {
   },
 };
 
-const concatTablesColumns = profileEnum[userAuthRole]?.columns
-  ? profileEnum.profileColumns.concat(profileEnum[userAuthRole].columns)
-  : profileEnum.profileColumns;
+const concatTablesColumns = profileModel[userAuthRole]?.columns
+  ? profileModel.profileColumns.concat(profileModel[userAuthRole].columns)
+  : profileModel.profileColumns;
 
-export const profileEnumForm = ref(mountObjFormWithTableColumns(concatTablesColumns));
+export const profileModelForm = ref(mountObjFormWithTableColumns(concatTablesColumns));
