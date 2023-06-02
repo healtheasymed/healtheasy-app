@@ -32,7 +32,7 @@ export default defineComponent({
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
   position: relative;
-  top: -20vh;
+  top: -30vh;
 
   display: grid;
   gap: 40px;
@@ -60,12 +60,6 @@ export default defineComponent({
 @media (max-width: 668px) {
   #specialties-box {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  #specialties-box {
-    top: -10vh;
   }
 }
 </style>

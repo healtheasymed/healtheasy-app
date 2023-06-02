@@ -45,4 +45,10 @@ export default defineComponent({
   font-weight: 700;
   line-height: 1;
 }
+
+@media (max-width: 500px) {
+  .title h2 {
+    text-align: center;
+  }
+}
 </style>

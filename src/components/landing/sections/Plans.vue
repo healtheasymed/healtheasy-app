@@ -63,6 +63,12 @@ export default defineComponent({
   margin: 0 auto;
 }
 
+@media (max-width: 500px) {
+  .title p {
+    width: 80%;
+  }
+}
+
 @media (max-width: 375px) {
   .content {
     max-width: 320px;
