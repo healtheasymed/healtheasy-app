@@ -11,7 +11,8 @@
           Oferecemos soluções personalizadas e eficazes para atender às suas demandas específicas.
           Caso queira descobrir qual plano é o melhor para você ou sua empresa,
           utilize nossa ferramenta de simulação
-          ou entre em contato conosco para saber mais sobre as nossas opções de planos.
+          ou <a href="#contato"><b>entre em contato conosco</b></a>
+          para saber mais sobre as nossas opções de planos.
           Estamos prontos para ajudá-lo a encontrar a melhor solução
           para a sua clínica ou consultório.
         </p>

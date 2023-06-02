@@ -87,6 +87,16 @@ export default {
   color: var(--light-blue);
 }
 
+.whatsapp.isColored {
+  background: #075e54;
+  color: var(--light-blue);
+}
+
+.email.isColored {
+  background: var(--dark-green);
+  color: var(--light-blue);
+}
+
 .custom.isColored {
   background: var(--dark-blue);
   color: var(--light-blue);

@@ -211,14 +211,26 @@ export const sites = [
   // },
   {
     id: 3,
-    name: 'LinkedIn',
-    icon: 'linkedin',
-    link: 'https://www.linkedin.com/mwlite/company/healtheasy',
+    name: 'Whatsapp',
+    icon: 'whatsapp',
+    link: 'https://wa.me/558540426250/?text=Olá!%20Estou%20entrando%20em%20contato%20através%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20Health%20Easy.%20',
   },
   {
     id: 4,
+    name: 'LinkedIn',
+    icon: 'linkedin',
+    link: 'https://www.linkedin.com/company/healtheasy/',
+  },
+  {
+    id: 5,
     name: 'Instagram',
     icon: 'instagram',
     link: 'https://www.instagram.com/healtheasyapp',
+  },
+  {
+    id: 6,
+    name: 'E-mail',
+    icon: 'email',
+    link: 'mailto:contato@healtheasy.com.br?subject=Contato%20-%20Site&body=Olá!%20Estou%20entrando%20em%20contato%20através%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20Health%20Easy.%20',
   },
 ];

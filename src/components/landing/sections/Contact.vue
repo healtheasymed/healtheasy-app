@@ -7,14 +7,16 @@
         <p>
           Para entrar em contato conosco, basta preencher o <b>formulário</b>
           na aba "Contato" ou por meio do número
-          <a href="tel:+558540426250"><b>(85) 4042-6250</b></a>.
+          <a href="https://wa.me/558540426250/?text=Olá!%20Estou%20entrando%20em%20contato%20através%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20Health%20Easy.%20"><b>(85) 4042-6250</b></a>.
         </p>
+
         <div class="social-media">
           <SocialButton
             v-for="site in sites"
             :key="site.id"
-            :iconName="site.icone"
+            :iconName="site.icon"
             :link="site.link"
+            :iconSize="24"
             isColored
           />
         </div>

@@ -12,7 +12,7 @@
           <SocialButton
             v-for="site in sites"
             :key="site.id"
-            :iconName="site.icone"
+            :iconName="site.icon"
             :link="site.link"
             :iconSize="16"
           />
