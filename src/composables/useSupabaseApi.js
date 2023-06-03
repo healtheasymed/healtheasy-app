@@ -225,19 +225,21 @@ export default function useAPI() {
     let [profile] = data;
 
     if (userAuthRole && profileModel[userAuthRole]?.table) {
-      const { id, ...roleData } = await getByProfileId(
+      const dataByProfileId = await getByProfileId(
         profileModel[userAuthRole]?.table,
         profile.id,
       );
 
-      Object.assign(profile, roleData);
-
-      // NOTE: atribuindo de forma dinamica o id da tabela especifica ao papel do usuario
-      // Ex.: doctor -> doctor_id: id, pacient -> pacient_id
-      profile = {
-        ...profile,
-        [roleIdKey]: id,
-      };
+      if (dataByProfileId) {
+        const { id, ...roleData } = dataByProfileId;
+        Object.assign(profile, roleData);
+        // NOTE: atribuindo de forma dinamica o id da tabela especifica ao papel do usuario
+        // Ex.: doctor -> doctor_id: id, pacient -> pacient_id
+        profile = {
+          ...profile,
+          [roleIdKey]: id,
+        };
+      }
     }
 
     console.log(profile);
