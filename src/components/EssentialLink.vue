@@ -2,7 +2,7 @@
   <q-item
     clickable
     :to="{ name: link }"
-    :disable="link.includes('#')"
+    :disable="link.includes('#') || disable"
   >
     <q-item-section
       v-if="icon"
@@ -41,6 +41,11 @@ export default defineComponent({
     icon: {
       type: String,
       default: '',
+    },
+
+    disable: {
+      type: Boolean,
+      default: false,
     },
   },
 });

@@ -31,6 +31,7 @@
           v-if="userAuthRole === 'doctor'"
           clickable
           v-close-popup
+          :disable="disable"
           @click="handleUserIntegrations"
         >
           <q-item-section class="row items-start">
@@ -41,7 +42,12 @@
           </q-item-section>
         </q-item>
 
-        <q-item clickable v-close-popup @click="handleSubscription">
+        <q-item
+          clickable
+          v-close-popup
+          :disable="disable"
+          @click="handleSubscription"
+        >
           <q-item-section class="row items-start">
             <q-item-label class="flex">
               <q-icon name="mdi-credit-card" class="q-mr-sm" />
@@ -80,6 +86,12 @@ export default defineComponent({
       default: () => ({}),
       required: true,
       type: Object,
+    },
+
+    disable: {
+      default: false,
+      required: true,
+      type: Boolean,
     },
   },
 

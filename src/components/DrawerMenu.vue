@@ -10,6 +10,7 @@
       <EssentialLink
         v-for="item in menu"
         :key="item.title"
+        :disable="disable"
         v-bind="item"
       />
     </q-list>
@@ -32,6 +33,12 @@ export default defineComponent({
       default: () => ({}),
       required: true,
       type: Object,
+    },
+
+    disable: {
+      default: false,
+      required: true,
+      type: Boolean,
     },
   },
 

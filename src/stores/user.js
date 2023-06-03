@@ -20,6 +20,7 @@ export const useUserStore = defineStore({
     getUserFullName: (state) => state.user?.name,
     getUserName: (state) => state.user?.name.split(' ')[0],
     getUserSurName: (state) => state.user?.name.slice(state.user.name.indexOf(' ') + 1),
+    getUserStatus: (state) => state.user?.status,
     getUserStateAbbr: (state) => (
       state.user?.state ? useBrazilianStatesStore().getSelectedState(state.user.state).sigla : null
     ),
