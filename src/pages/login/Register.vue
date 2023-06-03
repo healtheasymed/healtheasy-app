@@ -196,8 +196,12 @@ export default defineComponent({
     const onSubmit = async () => {
       try {
         /* TODO:
-          alterar o trigger do supabase para pegar o id criado e o papel do usuario
-          e inserir as informaçoes do crm na tabela de médico (caso seja médico)
+          caso seja médico, o crm e state será salvo no supabase através do
+          user_metadata, então, após o usuario confirmar o email
+          e fazer o primeiro login, deverá buscar o user_metadata e salvar
+          os valores diretamente na tabela doctors
+          (alternativa para não precisar mexer no trigger do postgres porque seria
+          muito mais complexo)
         */
         await register(form.value);
         notifySuccess();
