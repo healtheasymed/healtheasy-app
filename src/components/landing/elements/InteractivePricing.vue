@@ -30,35 +30,6 @@
       </span>
     </p>
    
-export default {
-  data() {
-    return {
-      accessQty: 1,
-      plans: [
-        { qty: 1, price: 79.90, discount: 0 },
-        { qty: 5, price: 319.90, discount: 0.2 },
-        { qty: 10, price: 559.90, discount: 0.3 }
-      ],
-      selectedPlan: null,
-    };
-  },
-  computed: {
-  finalPrice() {
-    if (this.selectedPlan) {
-      const totalPrice = this.accessQty > 10
-        ? this.selectedPlan.price * this.accessQty
-        : this.selectedPlan.price * this.accessQty;
-      const discountedPrice = totalPrice * (1 - this.selectedPlan.discount);
-      return discountedPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    }
-    return '';
-  },
-},
-
-.discount-indicator {
-  color: green; /* ou outra cor que você desejar */
-  font-weight: bold;
-}
       <div class="plan-value">
         <p>{{ finalPrice }} *</p>
         <span>/ mês </span>
@@ -69,22 +40,6 @@ export default {
   display: inline-block;
   overflow: hidden;
   border-radius: 20px;
-}
-
-.custom-select select {
-  appearance: none;
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.custom-select select:hover {
-  background-color: #2980b9;
 }
 
     <footer class="description-plan">
