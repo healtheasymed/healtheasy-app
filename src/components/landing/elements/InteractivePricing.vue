@@ -15,11 +15,13 @@
     </template>
   </h5>
 
-      <select class="pricing-range" v-model="accessQty">
-      <option value="1">1 acesso</option>
-      <option value="5">2 a 5 acessos</option>
-      <option value="10">6 a 10 acessos</option>
-    </select>
+      <div class="custom-select">
+  <select v-model="accessQty" @change="calculatePriceAndDiscount">
+    <option value="1">1 acesso</option>
+    <option value="5">2 a 5 acessos</option>
+    <option value="10">6 a 10 acessos</option>
+  </select>
+</div>
     
      <p>
       Preço: {{ finalPrice }}
@@ -41,14 +43,17 @@ export default {
       selectedPlan: null,
     };
   },
-  methods: {
-    calculatePriceAndDiscount() {
-      this.selectedPlan = this.plans.find(plan => this.accessQty <= plan.qty);
-    },
-  },
-  computed: {
+  methods: { 
     finalPrice() {
       if (this.selectedPlan) {
+        const totalPrice = this.selectedPlan.price * this.accessQty
+          ? this.selectedPlan.price * this.accessQty
+          : this.plans.defaultPrice * this.accessQty;
+  
+    return this.accessQty <= plan.qty;
+  },
+},
+
         const totalPrice = this.selectedPlan.price * this.accessQty;
         const discountedPrice = totalPrice * (1 - this.selectedPlan.discount);
         return discountedPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
@@ -71,6 +76,30 @@ export default {
         <span>/ mês </span>
       </div>
     </header>
+
+  <style scoped>
+.custom-select {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.custom-select select {
+  appearance: none;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.custom-select select:hover {
+  background-color: #2980b9;
+}
+</style>
 
     <footer class="description-plan">
       <h6>o que está incluso</h6>
