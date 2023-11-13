@@ -20,6 +20,51 @@
       <option value="5">2 a 5 acessos</option>
       <option value="10">6 a 10 acessos</option>
     </select>
+    
+     <p>
+      Preço: {{ finalPrice }}
+      <span v-if="selectedPlan && selectedPlan.discount > 0" class="discount-indicator">
+        ({{ selectedPlan.discount * 100 }}% de desconto)
+      </span>
+    </p>
+   
+   <script>
+export default {
+  data() {
+    return {
+      accessQty: 1,
+      plans: [
+        { qty: 1, price: 79.90, discount: 0 },
+        { qty: 5, price: 319.90, discount: 0.2 },
+        { qty: 10, price: 559.90, discount: 0.3 }
+      ],
+      selectedPlan: null,
+    };
+  },
+  methods: {
+    calculatePriceAndDiscount() {
+      this.selectedPlan = this.plans.find(plan => this.accessQty <= plan.qty);
+    },
+  },
+  computed: {
+    finalPrice() {
+      if (this.selectedPlan) {
+        const totalPrice = this.selectedPlan.price * this.accessQty;
+        const discountedPrice = totalPrice * (1 - this.selectedPlan.discount);
+        return discountedPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+      return '';
+    },
+  },
+};
+</script>
+
+<style scoped>
+.discount-indicator {
+  color: green; /* ou outra cor que você desejar */
+  font-weight: bold;
+}
+</style>
 
       <div class="plan-value">
         <p>{{ finalPrice }} *</p>
