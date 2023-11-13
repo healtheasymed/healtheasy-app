@@ -16,7 +16,7 @@
   </h5>
 
       <div class="custom-select">
-  <select v-model="accessQty" @change="calculatePriceAndDiscount">
+  <select v-model="accessQty" 
     <option value="1">1 acesso</option>
     <option value="5">2 a 5 acessos</option>
     <option value="10">6 a 10 acessos</option>
