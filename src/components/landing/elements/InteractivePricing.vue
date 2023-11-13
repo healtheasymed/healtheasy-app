@@ -23,15 +23,8 @@
   </select>
 </div>
     
-     <p>
-      Preço: {{ finalPrice }}
-      <span v-if="selectedPlan && selectedPlan.discount > 0" class="discount-indicator">
-        ({{ selectedPlan.discount * 100 }}% de desconto)
-      </span>
-    </p>
-   
-      <div class="plan-value">
-        <p>{{ finalPrice }} *</p>
+        <div class="plan-value">
+        <p> Preço:{{ finalPrice }} *</p>
         <span>/ mês </span>
       </div>
     </header>
