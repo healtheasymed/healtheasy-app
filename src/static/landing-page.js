@@ -126,14 +126,14 @@ export const plans = {
     },
     {
       id: process.env.STRIPE_PLAN_2,
-      initial: 2,
+      initial: 5,
       final: 5,
       discount: '0.2',
       fixedPrice: null,
     },
     {
       id: process.env.STRIPE_PLAN_3,
-      initial: 6,
+      initial: 10,
       final: 10,
       discount: '0.3',
       fixedPrice: null,
