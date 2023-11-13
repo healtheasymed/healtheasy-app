@@ -115,26 +115,28 @@ export const features = [
 ];
 
 export const plans = {
-  defaultPrice: 29.9,
+  defaultPrice: 79.9,
   options: [
     {
       id: process.env.STRIPE_PLAN_1,
       initial: 1,
-      final: 4,
+      final: 1,
       discount: 0,
+      fixedPrice: 79.9,
     },
     {
       id: process.env.STRIPE_PLAN_2,
-      initial: 5,
-      final: 10,
-      discount: '0.1',
+      initial: 2,
+      final: 5,
+      discount: '0.2',
+      fixedPrice: null,
     },
     {
       id: process.env.STRIPE_PLAN_3,
-      initial: 11,
-      final: 20,
-      price: 25.41,
-      discount: '0.15',
+      initial: 6,
+      final: 10,
+      discount: '0.3',
+      fixedPrice: null,
     },
   ],
   services: [

@@ -3,7 +3,17 @@
     <span class="flag-discount" v-show="discount > 0">{{ discount * 100 }}% OFF</span>
 
     <header class="section-top">
-      <h5>{{ accessQty }} acessos</h5>
+    <h5>
+    <template v-if="accessQty === 1">
+      1 acesso
+    </template>
+    <template v-else-if="accessQty >= 2 && accessQty <= 5">
+      2 a 5 acessos
+    </template>
+    <template v-else-if="accessQty >= 6 && accessQty <= 10">
+      6 a 10 acessos
+    </template>
+  </h5>
 
       <input
         type="range"
@@ -11,7 +21,7 @@
         name="range"
         id="range"
         min="1"
-        max="20"
+        max="10"
         v-model="accessQty"
         step="1"
       />
@@ -39,7 +49,7 @@
 
       <CustomButton text="Aderir ao plano" :width="180" @click="goToStripeCheckout" />
 
-      <sub><b>*</b> R$ 29,90 por quantidade de acesso</sub>
+      <sub><b>*</b> R$ 79,90 por quantidade de acesso</sub>
     </footer>
   </div>
 </template>
