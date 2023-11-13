@@ -50,7 +50,7 @@ export default {
           ? this.selectedPlan.price * this.accessQty
           : this.plans.defaultPrice * this.accessQty;
   
-    return this.accessQty <= plan.qty;
+    return this.accessQty &lt <= plan.qty;
   },
 },
 
