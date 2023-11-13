@@ -15,16 +15,11 @@
     </template>
   </h5>
 
-      <input
-        type="range"
-        class="pricing-range"
-        name="range"
-        id="range"
-        min="1"
-        max="3"
-        v-model="accessQty"
-        step="1"
-      />
+      <select class="pricing-range" v-model="accessQty">
+      <option value="1">1 acesso</option>
+      <option value="5">2 a 5 acessos</option>
+      <option value="10">6 a 10 acessos</option>
+    </select>
 
       <div class="plan-value">
         <p>{{ finalPrice }} *</p>
