@@ -30,7 +30,6 @@
       </span>
     </p>
    
-   <script>
 export default {
   data() {
     return {
@@ -55,8 +54,6 @@ export default {
     return '';
   },
 },
-
-</script>
 
 <style scoped>
 .discount-indicator {
