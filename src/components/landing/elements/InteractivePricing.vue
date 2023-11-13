@@ -55,21 +55,17 @@ export default {
   },
 },
 
-<style scoped>
 .discount-indicator {
   color: green; /* ou outra cor que você desejar */
   font-weight: bold;
 }
-</style>
-
       <div class="plan-value">
         <p>{{ finalPrice }} *</p>
         <span>/ mês </span>
       </div>
     </header>
 
-  <style scoped>
-.custom-select {
+  .custom-select {
   display: inline-block;
   overflow: hidden;
   border-radius: 20px;
@@ -90,7 +86,6 @@ export default {
 .custom-select select:hover {
   background-color: #2980b9;
 }
-</style>
 
     <footer class="description-plan">
       <h6>o que está incluso</h6>
