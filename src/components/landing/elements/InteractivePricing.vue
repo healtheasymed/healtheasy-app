@@ -7,10 +7,10 @@
     <template v-if="accessQty === 1">
       1 acesso
     </template>
-    <template v-else-if="accessQty >= 2 && accessQty <= 5">
+    <template v-if="accessQty === 2">
       2 a 5 acessos
     </template>
-    <template v-else-if="accessQty >= 6 && accessQty <= 10">
+    <template v-if="accessQty === 3">
       6 a 10 acessos
     </template>
   </h5>
@@ -21,7 +21,7 @@
         name="range"
         id="range"
         min="1"
-        max="10"
+        max="3"
         v-model="accessQty"
         step="1"
       />

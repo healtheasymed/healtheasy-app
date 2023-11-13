@@ -129,14 +129,14 @@ export const plans = {
       initial: 5,
       final: 5,
       discount: '0.2',
-      fixedPrice: null,
+      fixedPrice: 319.90,
     },
     {
       id: process.env.STRIPE_PLAN_3,
       initial: 10,
       final: 10,
       discount: '0.3',
-      fixedPrice: null,
+      fixedPrice: 559.90,
     },
   ],
   services: [
