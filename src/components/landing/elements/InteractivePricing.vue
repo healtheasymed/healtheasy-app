@@ -43,25 +43,19 @@ export default {
       selectedPlan: null,
     };
   },
-  methods: { 
-    finalPrice() {
-      if (this.selectedPlan) {
-        const totalPrice = this.selectedPlan.price * this.accessQty
-          ? this.selectedPlan.price * this.accessQty
-          : this.plans.defaultPrice * this.accessQty;
-  
-    return this.accessQty &lt <= plan.qty;
+  computed: {
+  finalPrice() {
+    if (this.selectedPlan) {
+      const totalPrice = this.accessQty > 10
+        ? this.selectedPlan.price * this.accessQty
+        : this.selectedPlan.price * this.accessQty;
+      const discountedPrice = totalPrice * (1 - this.selectedPlan.discount);
+      return discountedPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+    return '';
   },
 },
 
-        const totalPrice = this.selectedPlan.price * this.accessQty;
-        const discountedPrice = totalPrice * (1 - this.selectedPlan.discount);
-        return discountedPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-      }
-      return '';
-    },
-  },
-};
 </script>
 
 <style scoped>
