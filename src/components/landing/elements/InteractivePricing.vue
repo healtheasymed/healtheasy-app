@@ -36,12 +36,6 @@
       </div>
     </header>
 
-  .custom-select {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
     <footer class="description-plan">
       <h6>o que está incluso</h6>
       <ul>
