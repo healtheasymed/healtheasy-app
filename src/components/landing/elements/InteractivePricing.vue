@@ -18,7 +18,7 @@
       <div class="custom-select">
   <select v-model="accessQty">
     <option value="1">1 acesso</option>
-    <option value="4,00375469">2 a 5 acessos</option>
+    <option value="4.00375469">2 a 5 acessos</option>
     <option value="10">6 a 10 acessos</option>
   </select>
 </div>
