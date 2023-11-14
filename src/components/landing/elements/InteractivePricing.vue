@@ -18,7 +18,7 @@
       <div class="custom-select">
   <select v-model="accessQty">
     <option value="1">1 acesso</option>
-    <option value="5">2 a 5 acessos</option>
+    <option value="4,00375469">2 a 5 acessos</option>
     <option value="10">6 a 10 acessos</option>
   </select>
 </div>
@@ -122,24 +122,13 @@ export default defineComponent({
       });
     };
 
-   const finalPrice = computed(() => {
-  let totalPrice;
+    const finalPrice = computed(() => {
+      const totalPrice = accessQty.value > 10
+        ? selectedPlan.value.price * accessQty.value
+        : plans.defaultPrice * accessQty.value;
 
-  if (accessQty.value === 1) {
-    totalPrice = 79.90;
-  } else if (accessQty.value === 2) {
-    totalPrice = 319.90;
-  } else if (accessQty.value === 3) {
-    totalPrice = 559.90;
-  } else if (accessQty.value > 3) {
-    totalPrice = selectedPlan.value.price * accessQty.value;
-  } else {
-    totalPrice = plans.defaultPrice * accessQty.value;
-  }
-
-  return (totalPrice - (totalPrice * discount.value)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-});
-
+      return (totalPrice - (totalPrice * discount.value)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    });
 
     watch(accessQty, (value) => {
       if (value) {
