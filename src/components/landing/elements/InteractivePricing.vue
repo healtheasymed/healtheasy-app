@@ -122,13 +122,24 @@ export default defineComponent({
       });
     };
 
-    const finalPrice = computed(() => {
-      const totalPrice = accessQty.value > 10
-        ? selectedPlan.value.price * accessQty.value
-        : plans.defaultPrice * accessQty.value;
+   const finalPrice = computed(() => {
+  let totalPrice;
 
-      return (totalPrice - (totalPrice * discount.value)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    });
+  if (accessQty.value === 1) {
+    totalPrice = 79.90;
+  } else if (accessQty.value === 2) {
+    totalPrice = 319.90;
+  } else if (accessQty.value === 3) {
+    totalPrice = 559.90;
+  } else if (accessQty.value > 3) {
+    totalPrice = selectedPlan.value.price * accessQty.value;
+  } else {
+    totalPrice = plans.defaultPrice * accessQty.value;
+  }
+
+  return (totalPrice - (totalPrice * discount.value)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+});
+
 
     watch(accessQty, (value) => {
       if (value) {
