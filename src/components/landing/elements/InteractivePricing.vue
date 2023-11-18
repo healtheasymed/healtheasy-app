@@ -47,6 +47,7 @@
       <CustomButton text="Aderir ao plano" :width="180" @click="goToStripeCheckout" />
 
       <sub><b>*</b> R$ 79,90 por quantidade de acesso</sub>
+      <sub><b>*</b> Desconto a partir de 2 acessos</sub>
       <sub><b>*</b> Caso deseje adquirir mais de 10 acessos, entre em contato conosco</sub>
     </footer>
   </div>
