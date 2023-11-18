@@ -16,7 +16,7 @@
   </h5>
 
       <div class="custom-select">
-  <select v-model="accessQty">
+  <select v-model="accessQty" style="border-radius: 5px;">
     <option value="1">1 acesso</option>
     <option value="4.00375469">2 a 5 acessos</option>
     <option value="7.00750939">6 a 10 acessos</option>
