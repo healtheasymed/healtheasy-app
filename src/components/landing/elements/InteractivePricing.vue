@@ -124,7 +124,7 @@ export default defineComponent({
     };
 
     const finalPrice = computed(() => {
-      const totalPrice = accessQty.value > 10
+      const totalPrice = accessQty.value > 1
         ? selectedPlan.value.price * accessQty.value
         : plans.defaultPrice * accessQty.value;
 
