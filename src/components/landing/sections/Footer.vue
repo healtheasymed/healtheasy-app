@@ -84,7 +84,7 @@ export default defineComponent({
 
 <style scoped>
 footer {
-  background: var(--light-blue);
+  background: var(--dark-blue);
   min-height: 35vh;
 }
 
