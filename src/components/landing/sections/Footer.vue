@@ -139,7 +139,7 @@ footer {
 }
 
 .copyright ul a {
-  color: var(--dark-green);
+  color: var(--white);
   transition: all 0.2s ease-in-out;
 }
 
