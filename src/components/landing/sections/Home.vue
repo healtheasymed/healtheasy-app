@@ -49,6 +49,13 @@ export default defineComponent({
   min-height: 75vh;
 }
 
+.home {
+  background-image: url('@/assets/sua-imagem-de-fundo.jpg'); /* Substitua 'sua-imagem-de-fundo.jpg' pelo caminho correto para sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
 .section-left {
   justify-content: center;
 }
