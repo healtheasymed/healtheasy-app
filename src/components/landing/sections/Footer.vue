@@ -164,4 +164,5 @@ footer {
     gap: 20px;
     padding: 0 40px 40px !important;
   }
-sr
+}
+</style>
