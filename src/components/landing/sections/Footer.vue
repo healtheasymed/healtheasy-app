@@ -87,7 +87,6 @@ footer {
   background: var(--dark-blue);
   min-height: 35vh;
 }
-</style scoped>
 
 .content {
   color: var(--white);
