@@ -22,7 +22,7 @@
       <div class="footer-services">
         <h5>Serviços</h5>
         <p>
-          Transformando a saúde em uma jornada fácil e acessível, a <b>Health Easy</b> oferece
+          Transformando a saúde em uma jornada fácil e acessível, a Health Easy oferece
           serviços de qualidade para cuidar do seu bem-estar.
         </p>
       </div>
@@ -145,7 +145,7 @@ footer {
 
 .footer-contact .mdi,
 .copyright ul a:hover {
-  color: var(--dark-purple) !important;
+  color: var(--white) !important;
 }
 
 @media (max-width: 768px) {
@@ -164,13 +164,4 @@ footer {
     gap: 20px;
     padding: 0 40px 40px !important;
   }
-
-  .copyright ul {
-    flex-direction: column;
-  }
-
-  .copyright ul li:nth-child(2) {
-    display: none;
-  }
-}
-</style>
+sr
