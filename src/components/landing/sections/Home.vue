@@ -2,7 +2,7 @@
   <section class="home">
     <a class="invisible-anchor" id="inicio"></a>
 
-    <div class="content grid">
+    <div class="content grid container">
       <div class="section-left">
         <h1>Sistema para clínicas e consultórios</h1>
 
