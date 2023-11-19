@@ -2,12 +2,13 @@
   <section class="home">
     <a class="invisible-anchor" id="inicio"></a>
 
-    <div class="content grid container">
+    <div class="content grid">
       <div class="section-left">
+      <div class="text-container">
         <h1>Sistema para clínicas e consultórios</h1>
 
         <p>
-          Somos especializados em fornecer software de gestão para clínicas e
+          A Health Easy fornece software de gestão para clínicas e
           consultórios. Nossa solução de gestão de clínicas foi
           projetada para facilitar a vida dos profissionais de saúde e de suas equipes, melhorando
           a eficiência e a qualidade do atendimento ao paciente.
