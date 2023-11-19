@@ -57,7 +57,7 @@ export default defineComponent({
 
 .home {
   background-image: url('@/assets/sua-imagem-de-fundo.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
