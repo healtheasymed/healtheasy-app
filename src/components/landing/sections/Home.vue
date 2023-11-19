@@ -4,12 +4,11 @@
 
     <div class="content grid">
       <div class="section-left">
-      <div class="text-container">
-        <h1>Sistema para clínicas e consultórios</h1>
+      <h1>Sistema para clínicas e consultórios</h1>
 
         <p>
           A Health Easy fornece software de gestão para clínicas e
-          consultórios. Nossa solução de gestão de clínicas foi
+          consultórios. Nossa solução foi
           projetada para facilitar a vida dos profissionais de saúde e de suas equipes, melhorando
           a eficiência e a qualidade do atendimento ao paciente.
         </p>
@@ -26,7 +25,6 @@
       <div class="section-right">
         <img src="@/assets/mockup-1.png" alt="" />
       </div>
-    </div>
   </section>
 </template>
 
@@ -56,15 +54,7 @@ export default defineComponent({
   grid-template-columns: repeat(2, 1fr);
   min-height: 75vh;
 }
-
-.home {
-  background-image: url('@/assets/sua-imagem-de-fundo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-  
+ 
 .section-left {
   justify-content: center;
 }
