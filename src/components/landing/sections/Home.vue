@@ -21,6 +21,7 @@
           :link="{ name: 'landing', hash: '#contato' }"
         />
       </div>
+    </div>
 
       <div class="section-right">
         <img src="@/assets/mockup-1.png" alt="" />
