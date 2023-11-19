@@ -59,9 +59,10 @@ export default defineComponent({
 
 .home {
   background-image: url('@/assets/sua-imagem-de-fundo.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
   
 .section-left {
