@@ -124,6 +124,10 @@ export default defineComponent({
     };
 
     const finalPrice = computed(() => {
+      if (accessQty.value === null || accessQty.value === undefined) {
+      return ''; // ou qualquer valor padrão desejado
+  }
+
       const totalPrice = accessQty.value > 10
         ? selectedPlan.value.price * accessQty.value
         : plans.defaultPrice * accessQty.value;
