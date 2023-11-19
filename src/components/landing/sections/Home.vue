@@ -50,7 +50,7 @@ export default defineComponent({
 }
 
 .home {
-  background-image: url('@/assets/sua-imagem-de-fundo.jpg'); /* Substitua 'sua-imagem-de-fundo.jpg' pelo caminho correto para sua imagem */
+  background-image: url('@/assets/sua-imagem-de-fundo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
