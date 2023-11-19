@@ -16,7 +16,7 @@
   </h5>
 
       <div class="custom-select">
-  <select v-model="accessQty" style="border-radius: 15px;">
+  <select v-model="accessQty" style="border-radius: 49px;">
     <option value="1">1 acesso</option>
     <option value="4.00375469">2 a 5 acessos</option>
     <option value="7.00750939">6 a 10 acessos</option>
@@ -46,9 +46,9 @@
 
       <CustomButton text="Aderir ao plano" :width="180" @click="goToStripeCheckout" />
 
-      <sub><b>*</b> R$ 79,90 por quantidade de acesso</sub>
-      <sub><b>*</b> Desconto a partir de 2 acessos</sub>
-      <sub><b>*</b> Caso deseje adquirir mais de 10 acessos, entre em contato conosco</sub>
+      <sub><b>*</b> R$ 79,90 por quantidade de acesso.</sub>
+      <sub><b>*</b> Desconto a partir de 2 acessos.</sub>
+      <sub><b>*</b> Caso deseje adquirir mais de 10 acessos, entre em contato conosco.</sub>
     </footer>
   </div>
 </template>
@@ -124,7 +124,7 @@ export default defineComponent({
     };
 
     const finalPrice = computed(() => {
-      const totalPrice = accessQty.value > 1
+      const totalPrice = accessQty.value > 10
         ? selectedPlan.value.price * accessQty.value
         : plans.defaultPrice * accessQty.value;
 

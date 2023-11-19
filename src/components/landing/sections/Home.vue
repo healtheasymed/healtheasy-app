@@ -3,6 +3,7 @@
     <a class="invisible-anchor" id="inicio"></a>
 
     <div class="content grid">
+     <div class="content grid">
       <div class="section-left">
         <h1>Sistema para clínicas e consultórios</h1>
 
@@ -22,7 +23,6 @@
       </div>
 
       <div class="section-right">
-        <!-- TODO: trocar imagem -->
         <img src="@/assets/mockup-1.png" alt="" />
       </div>
     </div>
@@ -43,6 +43,13 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.container {
+  background-color: var(--light-blue); /* Cor do azul claro */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Borda arredondada */
+  margin: 20px; /* Espaçamento externo */
+}
+
 .content {
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
